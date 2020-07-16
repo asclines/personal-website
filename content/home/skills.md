@@ -16,20 +16,20 @@ subtitle = ""
 
 [[feature]]
   icon = "terminal"
-  icon_pack = "fab"
+  icon_pack = "fas"
   name = "C/C++"
   description = "Most Proficient"
   
 [[feature]]
   icon = "java"
-  icon_pack = "fas"
+  icon_pack = "fab"
   name = "Java"
   description = "Proficient"  
   
 [[feature]]
   icon = "python"
-  icon_pack = "fas"
-  name = "Photography"
+  icon_pack = "fab"
+  name = "Python"
   description = "Proficient"
 
 # Uncomment to use emoji icons.
