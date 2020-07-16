@@ -31,12 +31,12 @@ summarized into 3 sections. Research, Infrastructure, and Frontend
   
   **Research**
   
-  
 Technologies and methodologies used for confidential internal research are:
 Implementation of unsupervised methods including clustering for
 managing large quantities of text.
   * Utilization of LSTM networks.
   * Distillation of BERT models.
+  
   
 **Infrastructure**
 
