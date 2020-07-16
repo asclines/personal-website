@@ -30,16 +30,16 @@ applying new NLP technologies towards solutions for Google. My work can be
 summarized into 3 sections. Research, Infrastructure, and Frontend
   
   **Research**
-  
+ 
 Technologies and methodologies used for confidential internal research are:
 Implementation of unsupervised methods including clustering for
 managing large quantities of text.
   * Utilization of LSTM networks.
   * Distillation of BERT models.
-  
-  
-**Infrastructure**
 
+  
+  
+  **Infrastructure**
 
 Developed and improved many pipelines/frameworks within Google in relation to
 NLP data. A majority of this work involved scalable, distributed computing
