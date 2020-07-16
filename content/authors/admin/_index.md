@@ -17,6 +17,9 @@ social:
     link: https://www.linkedin.com/in/alexander-clines/
 education:
   courses:
+    - course: Computer Science B.S.
+      institution: Texas Tech University
+      year: 2017
     - course: Mathematics B.S.
       institution: Texas Tech University
       year: 2017
