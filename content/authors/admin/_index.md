@@ -5,11 +5,12 @@ superuser: true
 authors:
   - admin
 title: Alexander Clines
-role: Software Enginer at Google
+role: "Software Engineer "
 bio: "SWE on a NLP team under Google AI Language focused on all things related
   to applying new NLP technologies towards solutions for Google. "
 interests:
-  - ""
+  - Natural Language Processing
+  - Social Good
 social:
   - icon_pack: fab
     icon: linkedin
