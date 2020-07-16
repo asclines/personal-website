@@ -10,7 +10,8 @@ bio: "SWE on a NLP team under Google AI Language focused on all things related
   to applying new NLP technologies towards solutions for Google. "
 interests:
   - Natural Language Processing
-  - Social Good
+  - Technology Social Good
+  - Advancing Knowledge & Opportunities for all
 social:
   - icon_pack: fab
     icon: linkedin
