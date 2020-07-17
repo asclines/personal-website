@@ -27,23 +27,24 @@ date_format = "Jan 2006"
   description = """
   SWE on a NLP team under Google AI Language focused on all things related to
 applying new NLP technologies towards solutions for Google. My work can be
-summarized into 3 sections. Research, Infrastructure, and Frontend
+summarized into 2 sections.
   
   **Research**
  
 Technologies and methodologies used for confidential internal research are:
-Implementation of unsupervised methods including clustering for
+  * Implementation of unsupervised methods including clustering for
 managing large quantities of text.
   * Utilization of LSTM networks.
   * Distillation of BERT models.
-
+  
   
   
   **Infrastructure**
+  
 
 Developed and improved many pipelines/frameworks within Google in relation to
 NLP data. A majority of this work involved scalable, distributed computing
-in C++ with a wide variety of Google’s internal tools.
+in C++ with a wide variety of Google’s internal tools. <br>
 This included contributing to datasets like A Challenge Set and Methods for
 Noun-Verb Ambiguity and others expected to be open sourced by end of 2020. 1
 Contributed to the deployment of several models (including Sentiment Analysis)
