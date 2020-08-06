@@ -19,11 +19,21 @@ date_format = "Jan 2006"
 #   Begin/end multi-line descriptions with 3 quotes `"""`.
 [[experience]]
   title = "Software Engineer"
+  company = "Apple"
+  company_url = "https://www.google.com/"
+  location = "California"
+  date_start = "2020-08-03"
+  date_end = ""
+  description = """
+  SWE for Siri NL.
+  """
+[[experience]]
+  title = "Software Engineer"
   company = "Google"
   company_url = "https://www.google.com/"
   location = "California"
   date_start = "2017-07-17"
-  date_end = ""
+  date_end = "2020-08-01"
   description = """
   SWE on a NLP team under Google AI Language focused on all things related to
 applying new NLP technologies towards solutions for Google. My work can be
