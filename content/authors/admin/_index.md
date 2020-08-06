@@ -1,13 +1,12 @@
 ---
 organizations:
-  - name: Google
+  - name: Apple
 superuser: true
 authors:
   - admin
 title: Alexander Clines
 role: "Software Engineer "
-bio: "SWE on a NLP team under Google AI Language focused on all things related
-  to applying new NLP technologies towards solutions for Google. "
+bio: "SWE for Apple: Siri NL"
 interests:
   - Natural Language Processing
   - Technology Social Good
