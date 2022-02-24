@@ -20,12 +20,12 @@ date_format = "Jan 2006"
 [[experience]]
   title = "Software Engineer"
   company = "Apple"
-  company_url = "https://www.google.com/"
+  company_url = "https://www.apple.com/"
   location = "California"
   date_start = "2020-08-03"
   date_end = ""
   description = """
-  SWE for Siri NL.
+  Senior Software Engineer leading the on-device performance effort to the Siri NL Platform team.
   """
 [[experience]]
   title = "Software Engineer"
