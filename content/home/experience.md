@@ -25,7 +25,7 @@ date_format = "Jan 2006"
   date_start = "2020-08-03"
   date_end = ""
   description = """
-  Senior Software Engineer leading the on-device performance effort to the Siri NL Platform team.
+  Senior Software Engineer leading the on-device performance effort for the Siri NL Platform team.
   """
 [[experience]]
   title = "Software Engineer"
