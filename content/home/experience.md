@@ -23,7 +23,7 @@ date_format = "Jan 2006"
   company = "Apple"
   company_url = "https://www.apple.com/"
   location = "California"
-  date_start = "2020-09"
+  date_start = "2020-09-01"
   date_end = ""
   description = """
   Working on some fun things w/ Apple Intelligence
@@ -35,7 +35,7 @@ date_format = "Jan 2006"
   company_url = "https://www.apple.com/"
   location = "California"
   date_start = "2020-08-03"
-  date_end = "2023-09"
+  date_end = "2023-09-01"
   description = """
   Member of the Siri Natural Language Platform team; brought NL to ondevice starting in iOS 15.
   * Spearheaded performance optimization efforts, achieving optimal memory utilization and processing
