@@ -5,7 +5,7 @@ superuser: true
 authors:
   - admin
 title: Alexander Clines
-role: "Software Engineer | Engineering Manager "
+role: "Engineering Manager "
 bio: "Apple Siri Natural Language Understanding Software Engineering"
 interests:
   - Natural Language Understanding
