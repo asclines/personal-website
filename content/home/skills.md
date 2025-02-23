@@ -14,11 +14,13 @@ subtitle = ""
 # 
 # For available icons, see: https://sourcethemes.com/academic/docs/page-builder/#icons
 
+
 [[feature]]
-  icon = "terminal"
-  icon_pack = "fas"
-  name = "C/C++"
-  description = "Most Proficient"
+  icon = "apple"
+  icon_pack = "fab"
+  name = "Apple OS Development"
+  description = "Proficient" 
+
   
 [[feature]]
   icon = "swift"
@@ -31,7 +33,12 @@ subtitle = ""
   icon_pack = "fab"
   name = "Python"
   description = "Proficient"
-
+  
+[[feature]]
+  icon = "terminal"
+  icon_pack = "fas"
+  name = "C/C++"
+  description = "Proficient"
 [[feature]]
   icon = "java"
   icon_pack = "fab"
