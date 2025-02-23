@@ -5,12 +5,14 @@ superuser: true
 authors:
   - admin
 title: Alexander Clines
-role: "Software Engineer "
-bio: "SWE for Apple: Siri NL"
+role: "Software Engineer | Engineering Manager "
+bio: "Apple Siri Natural Language Understanding Software Engineering"
 interests:
-  - Natural Language Processing
-  - Technology Social Good
-  - Advancing Knowledge & Opportunities for all
+  - Natural Language Understanding
+  - Personalized ML
+  - Edge ML Inference
+  - Agriculture Technology
+  - Climate Technology
 social:
   - icon_pack: fab
     icon: linkedin
