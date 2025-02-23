@@ -18,15 +18,33 @@ date_format = "Jan 2006"
 #   Leave `date_end` empty if it's your current employer.
 #   Begin/end multi-line descriptions with 3 quotes `"""`.
 [[experience]]
+  title = "Engineering Manager"
+  company = "Apple"
+  company_url = "https://www.apple.com/"
+  location = "California"
+  date_start = "2020-09"
+  date_end = ""
+  description = """
+  Working on some fun things w/ Apple Intelligence
+  """
+
+[[experience]]
   title = "Software Engineer"
   company = "Apple"
   company_url = "https://www.apple.com/"
   location = "California"
   date_start = "2020-08-03"
-  date_end = ""
+  date_end = "2023-09"
   description = """
-  Senior Software Engineer leading the on-device performance effort for the Siri NL Platform team.
-  """
+Member of the Siri Natural Language Platform team; brought NL to ondevice starting in iOS 15.
+● Spearheaded performance optimization efforts, achieving optimal memory utilization and processing
+speed for NL models without compromising accuracy. This involved managing cross functional efforts
+with modeling and other Siri teams.
+● Led the effort to expand our on device platform to support functionality outside of Siri increasing our
+impact to user experience
+● Supported new hardware bring up efforts, optimizing NL Platform per hardware platform as needed
+● Primarily worked with on-device development utilizing Objective-C / Swift
+● Used Python/Tableau in offline environments for analysis on performance and monitoring metrics  """
 [[experience]]
   title = "Software Engineer"
   company = "Google"
