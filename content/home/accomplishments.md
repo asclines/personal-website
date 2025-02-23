@@ -25,7 +25,7 @@ date_format = "Jan 2006"
   title = "Siri / ChatGPT integration"
   url = "https://9to5mac.com/2024/10/28/apple-intelligence-is-here-iphone-ios-8-1/"
   certificate_url = ""
-  date_start = "2021-09-21"
+  date_start = "2024-10-28"
   date_end = ""	
   description = "Part of the team that brought ChatGPT integration to Siri"
 
