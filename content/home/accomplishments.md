@@ -5,7 +5,7 @@ headless = true  # This file represents a page section.
 active = true  # Activate this widget? true/false
 weight = 50  # Order that this section will appear.
 
-title = "Accomplish&shy;ments"
+title = "Accomplishments"
 subtitle = ""
 
 # Date format
@@ -18,6 +18,29 @@ date_format = "Jan 2006"
 #   Leave other parameters empty if not required.
 #   Begin/end multi-line descriptions with 3 quotes `"""`.
 
+
+[[item]]
+  organization = "Apple Intelligence"
+  organization_url = "https://www.apple.com/apple-intelligence/"
+  title = "Siri / ChatGPT integration"
+  url = "https://9to5mac.com/2024/10/28/apple-intelligence-is-here-iphone-ios-8-1/"
+  certificate_url = ""
+  date_start = "2021-09-21"
+  date_end = ""	
+  description = "Part of the team that brought ChatGPT integration to Siri"
+
+
+[[item]]
+  organization = "Apple Siri"
+  organization_url = "https://www.apple.com/siri/"
+  title = "Siri On-Device Processing in iOS 15"
+  url = "https://www.tomsguide.com/news/the-killer-feature-of-ios-15-holy-cow-its-actually-siri"
+  certificate_url = ""
+  date_start = "2021-09-21"
+  date_end = ""	
+  description = "Part of the team that brought Natural Language Understading for Siri on device for enchanced performance & privacy."
+
+  
 [[item]]
   organization = "EMNLP"
   organization_url = "http://emnlp2018.org/"
