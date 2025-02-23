@@ -21,16 +21,22 @@ subtitle = ""
   description = "Most Proficient"
   
 [[feature]]
-  icon = "java"
+  icon = "swift"
   icon_pack = "fab"
-  name = "Java"
-  description = "Proficient"  
+  name = "Objective-C/Swift"
+  description = "Proficient" 
   
 [[feature]]
   icon = "python"
   icon_pack = "fab"
   name = "Python"
   description = "Proficient"
+
+[[feature]]
+  icon = "java"
+  icon_pack = "fab"
+  name = "Java"
+  description = "Experienced" 
 
 # Uncomment to use emoji icons.
 # [[feature]]
