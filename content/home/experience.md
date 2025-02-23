@@ -23,7 +23,7 @@ date_format = "Jan 2006"
   company = "Apple"
   company_url = "https://www.apple.com/"
   location = "California"
-  date_start = "2020-09-01"
+  date_start = "2023-09-01"
   date_end = ""
   description = """
   Working on some fun things w/ Apple Intelligence
