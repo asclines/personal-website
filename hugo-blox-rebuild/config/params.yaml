@@ -1,0 +1,29 @@
+# Hugo Blox site parameters
+appearance:
+  mode: system
+  color: emerald
+marketing:
+  seo:
+    site_type: Person
+    description: 'Concise, professional landing page for Alexander Clines.'
+    twitter: 'GetResearchDev'
+header:
+  navbar:
+    enable: true
+    blox: "navbar"
+    fixed_to_top: true
+    show_search: true
+    show_theme_chooser: true
+    logo:
+      text: "Alexander Clines"
+footer:
+  copyright:
+    notice: '© {year} Alexander Clines. All rights reserved.'
+locale:
+  date_format: 'Jan 2, 2006'
+  time_format: '3:04 PM'
+features:
+  math:
+    enable: false
+  privacy_pack:
+    enable: false

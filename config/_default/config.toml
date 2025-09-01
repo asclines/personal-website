@@ -3,7 +3,10 @@
 # Hugo Documentation: https://gohugo.io/getting-started/configuration/#all-configuration-settings
 #
 # This file is formatted using TOML syntax - learn more at https://learnxinyminutes.com/docs/toml/
+
 # Each configuration section is defined by a name in square brackets (e.g. `[outputs]`).
+
+theme = ["github.com/HugoBlox/hugo-blox-builder/starters/academic-cv"]
 
 # Title of your site
 title = "Alexander Clines"
@@ -20,8 +23,6 @@ copyright = ""
 ## Advanced options below ##
 ############################
 
-# Name of Academic theme folder in `themes/`.
-theme = "academic"
 
 # Get last modified date for content from Git?
 enableGitInfo = false
@@ -33,7 +34,9 @@ defaultContentLanguageInSubdir = false
 removePathAccents = true  # Workaround for https://github.com/gohugoio/hugo/issues/5687
 
 summaryLength = 30  # Listing summary length in words. Also, see `abstract_length` in `params.toml`.
-paginate = 10  # Number of items per page in paginated lists.
+
+[pagination]
+  pagerSize = 10  # Number of items per page in paginated lists.
 enableEmoji = true
 footnotereturnlinkcontents = "<sup>^</sup>"
 ignoreFiles = ["\\.ipynb$", ".ipynb_checkpoints$", "\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
