@@ -1,10 +1,10 @@
 ## Meta tags
 - id: "meta_title"
-  translation: "Adritian - a high performance hugo theme by Adrián Moreno"
+  translation: "Alexander Clines - Software Engineering Manager"
 - id: "meta_description"
-  translation: "This hugo theme (Adritian) is based on Bootstrap and has features that make it suitable for a personal site, a portfolio or other kind of Single Page Applications."
+  translation: "Personal website and portfolio of Alexander Clines, Software Engineering Manager."
 - id: "meta_keywords"
-  translation: "hugo, theme, bootstrap, adritian, adrian moreno, personal site, portfolio, single page application"
+  translation: "alexander clines, software engineering, portfolio, personal site"
 - id: "meta_author"
   translation: "Adrián Moreno Peña"
 - id: "meta_image"
@@ -13,13 +13,13 @@
 ## Header
 
 - id: "logo_alt"
-  translation: "Adritian logo"
+  translation: "Alexander Clines logo"
 
 - id: "logo_text1"
-  translation: "Adritian"
+  translation: "Alexander Clines"
 
 - id: "logo_text2"
-  translation: "Demo"
+  translation: "Home"
 
 ## General
 - id: "skipToMainContent"
@@ -30,7 +30,7 @@
 
 ## Footer
 - id: "footer_notice"
-  translation: "© Adritian. Free Hugo theme by Adrián Moreno Peña."
+  translation: "© Alexander Clines. All rights reserved."
 
 - id: "language"
   translation: "Language"
@@ -47,7 +47,7 @@
 
 ## Homepage head title
 - id: "head_title"
-  translation: "Demo site for Adritian - a high performance hugo theme by Adrián Moreno"
+  translation: "Personal website for Alexander Clines"
 
 - id: "head_description"
   translation: "This hugo theme (Adritian) is based on Bootstrap and has features that make it suitable for a personal site, a portfolio or other kind of Single Page Applications."

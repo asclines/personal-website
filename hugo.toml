@@ -1,5 +1,5 @@
-baseURL = "https://adritian-demo.vercel.app/"
-title = "Adritian Demo"
+baseURL = "https://alexanderclines.com/"
+title = "Alexander Clines"
 languageCode = "en"
 
 # Exclude footer section from generating list pages (index.html and index.xml)
@@ -63,8 +63,8 @@ target = "assets/css/bootstrap-print.css"
 
 
 [params]
-title = 'Adritian - a high performance hugo theme by Adrián Moreno'
-description = 'This hugo theme (Adritian) is based on Bootstrap and has features that make it suitable for a personal site, a portfolio or other kind of Single Page Applications.'
+title = 'Alexander Clines - Software Engineering Manager'
+description = 'Personal website and portfolio of Alexander Clines, Software Engineering Manager.'
 images = ['/img/og-img.png']
 sections = [
   "showcase",

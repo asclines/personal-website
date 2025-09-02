@@ -1,28 +1,21 @@
-
----
-title: "Home"
-type: home
-draft: false
----
++++
+type = "home"
+draft = false
++++
 
 {{< showcase-section
-    title="Software Engineering Manager @ Apple"
-    subtitle="[Your subtitle here]"
-    buttonText="View Experience"
-    buttonUrl="/experience/"
-    description="<strong>Placeholder description:</strong> Welcome to my site! Here you'll find my resume, experience, and more."
+    title="Alexander Clines"
+    subtitle="insert tagline here"
+    description="Welcome to my site! Here you'll find my resume, experience, and more."
     imgSrc="images/showcase/showcase.png"
     imgScale="0.5"
 >}}
+{{< /showcase-section >}}
 
 {{< platform-links >}}
     {{< link icon="square-facebook" url="https://facebook.com/yourpage" >}}
-    {{< link icon="square-twitter" url="https://twitter.com/yourpage" >}}
-    {{< link icon="linkedin" url="https://www.linkedin.com/in/adrianmoreno/" >}}
-    {{< link icon="square-github" url="https://github.com/zetxek" >}}
     {{< link icon="x-twitter" url="https://twitter.com/zetxek" >}}
     {{< link icon="dribbble" url="#" >}}
-    {{< link icon="behance" url="#" >}}
     {{< link icon="youtube" url="#" >}}
     {{< link icon="instagram" url="https://www.instagram.com/zetxek/" >}}
     {{< link icon="square-facebook" url="https://www.facebook.com/zetxek/" >}}
@@ -35,10 +28,7 @@ draft: false
     {{< link icon="quote-left" url="https://www.adrianmoreno.info/" >}}
     {{< link icon="cloud-arrow-down" url="https://www.adrianmoreno.info/" >}}
     {{< link icon="square-xing" url="https://www.adrianmoreno.info/" >}}
-
 {{< /platform-links >}}
-
-{{< /showcase-section >}}
 
 {{< about-section
     title="About me"
