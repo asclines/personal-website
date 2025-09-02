@@ -70,27 +70,3 @@ draft: false
     title="Experience (as list)"
     padding="false" >}}
 
-{{< client-and-work-section
-    title="A selection of my work" >}} 
-
-{{< testimonial-section
-    title="What they say about me" >}}
-
-{{< spacer size="large" >}}
-
-## Extra home content
-
-Additional content added after the `section` blocks, in the `home.md` file. 
-
-Here you could freestyle, add other shortcodes, ...  Or just let the content empty, and rely on the shortcode sections alone.
-
-{{< spacer size="small" >}}
-
-{{< text-section
-title="Extra (centered) content"
-centered="true"
->}}
-
-You can also use the `text-section` shortcode to add centered texts
-
-{{< /text-section >}}
