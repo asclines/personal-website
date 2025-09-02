@@ -138,18 +138,18 @@ name = 'Skills'
 URL = '/skills'
 weight = 3
 [[languages.en.menus.header]]
-name = 'Portfolio'
-URL = '#portfolio'
-weight = 4
+# name = 'Portfolio'
+# URL = '#portfolio'
+# Add Experience link to header
+[[languages.en.menus.header]]
+
 #  [[languages.en.menus.header]]
 #  name = "Experience"
 #  URL = "#experience"
 #  weight = 4
 
 [[languages.en.menus.header]]
-name = "How to"
-URL = "/blog"
-weight = 5
+
 
 [[languages.en.menus.header]]
 pre = "email"
