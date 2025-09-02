@@ -5,8 +5,8 @@ draft = false
 
 {{< showcase-section
     title="Alexander Clines"
-    subtitle="insert tagline here"
-    description="Welcome to my site! Here you'll find my resume, experience, and more."
+    subtitle="Software Engineering Manager"
+    description="Welcome! I’m Alexander Clines, a technology leader passionate about building high-performing teams and delivering innovative software solutions. Explore my experience, skills, and projects below."
     imgSrc="images/showcase/showcase.png"
     imgScale="0.5"
 >}}
