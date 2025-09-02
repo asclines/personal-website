@@ -2,36 +2,23 @@
   "comments": {
     "dependencies": {},
     "devDependencies": {
-      "@playwright/test": "project",
-      "@types/node": "project",
       "@zetxek/adritian-theme-helper": "github.com/zetxek/adritian-free-hugo-theme",
-      "autoprefixer": "project",
-      "bootstrap": "project",
+      "autoprefixer": "github.com/zetxek/adritian-free-hugo-theme",
+      "bootstrap": "github.com/zetxek/adritian-free-hugo-theme",
       "bootstrap-print-css": "github.com/zetxek/adritian-free-hugo-theme",
-      "npm-run-all": "project",
-      "postcss": "project",
-      "postcss-cli": "project"
+      "postcss": "github.com/zetxek/adritian-free-hugo-theme",
+      "postcss-cli": "github.com/zetxek/adritian-free-hugo-theme"
     }
   },
   "dependencies": {},
   "devDependencies": {
-    "@playwright/test": "^1.49.1",
-    "@types/node": "^22.10.5",
-    "@zetxek/adritian-theme-helper": "^1.0.3",
+    "@zetxek/adritian-theme-helper": "^1.0.5",
     "autoprefixer": "^10.4.17",
-    "bootstrap": "^5.3.3",
+    "bootstrap": "^5.3.7",
     "bootstrap-print-css": "^1.0.0",
-    "npm-run-all": "^4.1.5",
-    "postcss": "^8.4.35",
+    "postcss": "^8.5.4",
     "postcss-cli": "^11.0.0"
   },
-  "scripts": {
-    "build": "hugo build --source exampleSite --themesDir ../.. --logLevel debug --minify",
-    "serve": "hugo server --source exampleSite --themesDir ../.. --logLevel debug",
-    "start": "hugo server",
-    "test": "npm-run-all build --parallel --continue-on-error --aggregate-output test-*",
-    "test:e2e": "playwright test",
-    "test:e2e:debug": "playwright test --debug",
-    "test:e2e:ui": "playwright test --ui"
-  }
+  "name": "personal-website",
+  "version": "0.1.0"
 }

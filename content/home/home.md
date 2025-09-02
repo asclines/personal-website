@@ -6,13 +6,14 @@ draft: false
 ---
 
 {{< showcase-section
-    title="Showcase section"
-    subtitle="Subtitle - coming from <code>home.md</code>"
-    buttonText="Email"
-    description="<strong>Strong</strong>, <em>italic</em> and normal text. This comes from <a href='https://github.com/zetxek/adritian-demo/blob/main/content/home/home.md?plain=1'><code>home.md</code></a>, using the <code>showcase-section</code> <a href=''>shortcode</a>.<br/>Below you can see the social links, provided by the <code>platform-links</code> shortcode."
+    title="Software Engineering Manager @ Apple"
+    subtitle="[Your subtitle here]"
+    buttonText="View Experience"
+    buttonUrl="/experience/"
+    description="<strong>Placeholder description:</strong> Welcome to my site! Here you'll find my resume, experience, and more."
     imgSrc="images/showcase/showcase.png"
     imgScale="0.5"
- >}}
+>}}
 
 {{< platform-links >}}
     {{< link icon="square-facebook" url="https://facebook.com/yourpage" >}}
