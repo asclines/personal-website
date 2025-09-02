@@ -154,7 +154,7 @@ weight = 3
 [[languages.en.menus.header]]
 pre = "email"
 name = "email"
-URL = "#contact"
+URL = "mailto:me@alexanderclines.com"
 weight = 6
 
 [[languages.en.menus.header]]
