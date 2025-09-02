@@ -26,5 +26,8 @@ draft = false
     padding="false" >}}
 
 {{< education-list
-    title="Education" >}}
+    title="Education"
+    intro="I attended Texas Tech University and graduated in 2017 with two degrees:"
+    items="Computer Science B.S. from the Edward E. Whitacre Jr. College of Engineering (2017); Mathematics B.S. from Texas Tech College of Arts & Sciences (2017)"
+>}}
 
