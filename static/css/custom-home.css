@@ -1,0 +1,71 @@
+/* Custom styles for Alexander Clines homepage */
+/* Reduce excessive whitespace in the hero/showcase area */
+.rad-showcase {
+  padding-top: 40px !important;
+  padding-bottom: 40px !important;
+  min-height: auto !important;
+}
+@media (min-width: 1200px) {
+  .rad-showcase {
+    min-height: auto !important; /* override theme's 870px */
+  }
+}
+/* Avoid negative spacing after the hero */
+.rad-showcase + section {
+  margin-top: 0 !important;
+}
+
+/* Custom showcase section with side-by-side layout */
+.showcase-section-custom {
+  padding: 2rem 0;
+}
+
+.showcase-flex-custom {
+  display: flex !important;
+  align-items: center !important;
+  gap: 3rem !important;
+  justify-content: center !important;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+@media (max-width: 991px) {
+  .showcase-flex-custom {
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+  }
+}
+
+.showcase-text-custom {
+  flex: 1;
+  max-width: 600px;
+}
+
+.showcase-image-custom {
+  flex: 0 0 auto;
+}
+
+.showcase-photo-custom {
+  width: 230px !important;
+  height: 230px !important;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+@media (max-width: 991px) {
+  .showcase-photo-custom {
+    width: 184px !important;
+    height: 184px !important;
+  }
+}
+
+/* Fix header background to hide content underneath when scrolling */
+.header {
+  background-color: #fff !important;
+  position: sticky !important;
+  top: 0 !important;
+  z-index: 1000 !important;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1) !important;
+}

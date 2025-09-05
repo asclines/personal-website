@@ -1,0 +1,13 @@
+{{/* Local override for showcase-section shortcode to create side-by-side layout */}}
+<div class="showcase-section-custom" style="padding: 8rem 0 2rem 0; margin-top: 3rem;">
+  <div class="showcase-flex-custom" style="display: flex !important; align-items: center !important; gap: 3rem !important; justify-content: center !important; max-width: 1140px; margin: 0 auto; position: relative; z-index: 1;">
+    <div class="showcase-text-custom" style="flex: 1; max-width: 600px;">
+      <h1 class="display-1">{{ .Get "title" }}</h1>
+      <p class="lead">{{ .Get "description" | safeHTML }}</p>
+    </div>
+    <div class="showcase-image-custom" style="flex: 0 0 auto;">
+      <img src="{{ .Get "imgSrc" | absURL }}" alt="Profile picture" class="showcase-photo-custom" style="width: 230px !important; height: 230px !important; object-fit: cover; border-radius: 50%; box-shadow: 0 4px 12px rgba(0,0,0,0.1); position: relative; z-index: 2;" />
+    </div>
+  </div>
+  {{ .Inner }}
+</div>
