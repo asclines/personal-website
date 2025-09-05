@@ -15,5 +15,8 @@ Throughout my career, I've focused on creating scalable, maintainable software u
 
 {{< experience-list >}}
 
-{{< education-list title="Education" >}}
+{{< education-list
+	title="Education"
+	items="B.S. Computer Science, Edward E. Whitacre Jr. College of Engineering (2017); B.S. Mathematics, College of Arts & Sciences (2017)"
+>}}
 
