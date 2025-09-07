@@ -1,0 +1,22 @@
+{{/* Minimal contact section shortcode to satisfy old content while using a different theme. */}}
+{{ $sectionId := .Get "sectionId" | default "contact" }}
+{{ $title := .Get "title" | default "Contact" }}
+
+<section id="{{ $sectionId }}" class="contact-section section">
+  <h2>{{ $title }}</h2>
+  <div class="contact-grid">
+    <div class="contact-form">
+      <form onsubmit="return false" aria-label="Contact form disabled">
+        <label>Name</label>
+        <input type="text" disabled>
+        <label>Email</label>
+        <input type="email" disabled>
+        <label>Message</label>
+        <textarea rows="4" disabled></textarea>
+        <button type="submit" disabled>Send</button>
+      </form>
+      <p style="font-size: 0.9rem; color: var(--bs-gray-600, #666);">Contact form is disabled in this preview.</p>
+    </div>
+  </div>
+</section>
+

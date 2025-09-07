@@ -1,0 +1,13 @@
+{{/* Minimal link shortcode used inside platform-links */}}
+{{ $url := .Get "url" }}
+{{ $icon := .Get "icon" | default "link" }}
+
+{{ $target := "" }}
+{{ if or (hasPrefix $url "http://") (hasPrefix $url "https://") }}
+  {{ $target = "_blank" }}
+{{ end }}
+
+<a class="platform-link" href="{{ $url }}" {{ if $target }}target="{{ $target }}" rel="noopener"{{ end }} aria-label="{{ $icon }}">
+  {{- if eq $icon "email" -}}✉️{{- else if eq $icon "linkedin" -}}in{{- else -}}🔗{{- end -}}
+</a>
+

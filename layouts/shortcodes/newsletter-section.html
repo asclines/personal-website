@@ -1,0 +1,14 @@
+{{/* Minimal fallback for newsletter-section shortcode to avoid build errors with themes that don't provide it. */}}
+{{ $title := .Get "newsletter_title" | default "Subscribe" }}
+{{ $placeholder := .Get "newsletter_placeholder" | default "Your email" }}
+{{ $button := .Get "newsletter_button" | default "Subscribe" }}
+
+<section class="newsletter-section section">
+  <h2>{{ $title }}</h2>
+  <form onsubmit="return false" class="newsletter-form" aria-label="Newsletter subscription disabled">
+    <input type="email" placeholder="{{ $placeholder }}" aria-label="Email" disabled>
+    <button type="submit" disabled>{{ $button }}</button>
+  </form>
+  <p style="font-size: 0.9rem; color: var(--bs-gray-600, #666);">Newsletter currently unavailable.</p>
+</section>
+
