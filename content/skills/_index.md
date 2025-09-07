@@ -1,53 +1,47 @@
 ---
-title: "Technical Skills"
+title: "Skills"
 date: 2025-05-19T14:56:00+01:00
 draft: false
-description: "A comprehensive overview of technical skills and expertise across various domains."
+description: "Core technical skills from recent work on Siri NLU and on‑device systems."
 skill_categories:
   - name: "Programming Languages"
     skills:
-      - name: "JavaScript/TypeScript"
-        level: 95
-        years: "10+"
-        description: "Modern ES6+, TypeScript, React, Node.js"
+      - name: "Swift / Objective‑C"
+        level: 90
+        years: "5+"
+        description: "On‑device iOS development"
+      - name: "Python"
+        level: 90
+        years: "8+"
+        description: "Tooling, analysis, and workflow automation"
+      - name: "C/C++"
+        level: 85
+        years: "5+"
+        description: "Performance‑sensitive components"
       - name: "Java"
-        level: 85
-        years: "8+"
-        description: "Enterprise applications, Spring framework"
-      - name: "PHP"
-        level: 90
-        years: "10+"
-        description: "Laravel, Symfony, WordPress"
-      - name: "Swift/Objective-C"
-        level: 80
-        years: "7+"
-        description: "iOS native development"
-      - name: "Kotlin/Java"
         level: 75
-        years: "6+"
-        description: "Android native development"
-  - name: "Frameworks & Technologies"
+        years: "4+"
+        description: "General backend and tooling"
+  - name: "Platforms"
     skills:
-      - name: "React/React Native"
+      - name: "Apple OS Development"
         level: 90
-        years: "7+"
-        description: "Web and cross-platform mobile apps"
-      - name: "Node.js"
+        years: "5+"
+        description: "iOS and on‑device systems"
+  - name: "ML / NLP"
+    skills:
+      - name: "On‑device NLP"
         level: 90
-        years: "8+"
-        description: "Express, NestJS, API development"
-      - name: "AWS"
+        years: "4+"
+        description: "Siri NLU, latency & memory optimization"
+      - name: "Model Optimization & Distillation"
         level: 85
-        years: "6+"
-        description: "EC2, S3, Lambda, CloudFront, RDS"
-      - name: "Docker/Kubernetes"
+        years: "3+"
+        description: "Compression, performance tuning"
+      - name: "Data Pipelines & Tooling"
         level: 80
         years: "5+"
-        description: "Containerization, orchestration"
-      - name: "CI/CD"
-        level: 90
-        years: "8+"
-        description: "GitHub Actions, Jenkins, CircleCI"
+        description: "Metrics, analysis, and workflow automation"
 ---
 
-As a technology professional, I've developed expertise across multiple technical domains throughout my career. This skills showcase highlights my technical capabilities, from programming languages to architectural patterns and methodologies.
+This page highlights a focused set of skills reflected in my recent roles. If you’re looking for something specific that isn’t listed here, feel free to reach out.
