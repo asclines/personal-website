@@ -1,0 +1,48 @@
+{{ define "main" }}
+<section class="site-skills-section py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h1 class="site-skills-title">{{ .Title }}</h1>
+        <div class="site-skills-description">{{ .Content }}</div>
+      </div>
+    </div>
+
+    <style>
+      .skill-item{margin-bottom:1rem}
+      .skill-header{display:flex;justify-content:space-between;align-items:center}
+      .skill-bar{background:#e9ecef;border-radius:6px;height:10px;overflow:hidden}
+      .skill-bar-fill{background:var(--bs-primary,#478079);height:100%;border-radius:6px}
+      .skill-meta{display:flex;justify-content:space-between;font-size:.9rem;color:#6c757d}
+    </style>
+
+    {{ range .Params.skill_categories }}
+    <div class="row mt-5">
+      <div class="col-12">
+        <h2 class="mb-4">{{ .name }}</h2>
+        <div class="row">
+          {{ range .skills }}
+          <div class="col-md-6">
+            <div class="skill-item">
+              <div class="skill-header">
+                <h3 class="h5 m-0">{{ .name }}</h3>
+                {{ with .level }}<span class="skill-level">{{ . }}%</span>{{ end }}
+              </div>
+              <div class="skill-bar my-2">
+                <div class="skill-bar-fill" style="width: {{ default 0 .level }}%;"></div>
+              </div>
+              <div class="skill-meta">
+                {{ with .years }}<span class="skill-years">{{ . }} years</span>{{ end }}
+                {{ with .description }}<span class="skill-description">{{ . }}</span>{{ end }}
+              </div>
+            </div>
+          </div>
+          {{ end }}
+        </div>
+      </div>
+    </div>
+    {{ end }}
+  </div>
+</section>
+{{ end }}
+

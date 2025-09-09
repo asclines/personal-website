@@ -12,34 +12,100 @@ cleanDestinationDir = true
   subtitle = "Software Engineering Manager"
   description = "Personal website for Alexander Clines"
 
-  # Hugo Profile homepage hero
-  [params.profileMode]
-    enabled = true
+  # Homepage hero (Hugo Profile expects `params.hero`)
+  [params.hero]
+    enable = true
+    intro = "Hi, I'm"
     title = "Alexander Clines"
     subtitle = "Building high‑performing teams and on‑device NLP."
-    imageUrl = "/images/about/user-picture.png"
-    imageWidth = 180
-    imageHeight = 180
-    imageTitle = "Profile picture"
-    [[params.profileMode.buttons]]
-      name = "CV"
-      url = "/cv/"
-    [[params.profileMode.buttons]]
-      name = "Skills"
-      url = "/skills/"
+    content = "Technology leader focused on on‑device natural language understanding and impactful user experiences."
+    image = "/images/about/user-picture.png"
+    roundImage = true
+    [params.hero.button]
+      enable = true
+      name = "Resume"
+      url = "/resume.pdf"
+      newPage = true
+      download = false
+    [params.hero.socialLinks]
+      # Font Awesome icons
+      [[params.hero.socialLinks.fontAwesomeIcons]]
+        icon = "fas fa-envelope"
+        url = "mailto:me@alexanderclines.com"
+      [[params.hero.socialLinks.fontAwesomeIcons]]
+        icon = "fab fa-linkedin"
+        url = "https://www.linkedin.com/in/alexander-clines/"
 
-  # Optional alternate home intro supported by the theme
-  [params.homeInfoParams]
-    Title = "Hi, I'm Alexander 👋"
-    Content = "Software Engineering Manager focused on on‑device NLP and building high‑performing teams."
+  # About section
+  [params.about]
+    enable = true
+    title = "About"
+    content = "Alexander Clines is an Engineering Manager focused on Siri Natural Language Understanding and Apple Intelligence. His work spans building high‑performing teams, advancing on‑device natural language capabilities, and delivering user‑impacting features at scale."
 
-  # Social icons
-  [[params.socialIcons]]
-    name = "Email"
-    url = "mailto:me@alexanderclines.com"
-  [[params.socialIcons]]
-    name = "LinkedIn"
-    url = "https://www.linkedin.com/in/alexander-clines/"
+  # Experience section (compact highlight)
+  [params.experience]
+    enable = true
+    title = "Experience"
+    
+    [[params.experience.items]]
+      job = "Engineering Manager"
+      company = "Apple"
+      companyUrl = "https://www.apple.com/"
+      date = "2023 – Present"
+      [params.experience.items.info]
+        enable = true
+        content = "Leading on‑device NLP efforts within Apple Intelligence."
+      content = "• Managing teams delivering on‑device NLP capabilities\n• Driving reliability, performance, and user impact"
+
+    [[params.experience.items]]
+      job = "Software Engineer"
+      company = "Apple"
+      companyUrl = "https://www.apple.com/"
+      date = "2020 – 2023"
+      [params.experience.items.info]
+        enable = true
+        content = "Siri Natural Language Platform — on‑device from iOS 15."
+      content = "• Performance optimization of NL models\n• On‑device platform expansion beyond Siri\n• Objective‑C/Swift, Python for analysis"
+
+    [[params.experience.items]]
+      job = "Software Engineer"
+      company = "Google"
+      companyUrl = "https://www.google.com/"
+      date = "2017 – 2020"
+      [params.experience.items.info]
+        enable = true
+        content = "Google AI Language — research and infrastructure."
+      content = "• NLP pipelines and distributed systems (C++)\n• Model distillation and dataset contributions"
+
+  # Education section
+  [params.education]
+    enable = true
+    title = "Education"
+    index = true
+    
+    [[params.education.items]]
+      title = "B.S. Computer Science"
+      date = "2013 – 2017"
+      [params.education.items.school]
+        name = "Texas Tech University"
+        url = "https://www.ttu.edu/"
+      content = "Edward E. Whitacre Jr. College of Engineering"
+
+    [[params.education.items]]
+      title = "B.S. Mathematics"
+      date = "2013 – 2017"
+      [params.education.items.school]
+        name = "Texas Tech University"
+        url = "https://www.ttu.edu/"
+      content = "College of Arts & Sciences"
+
+  # Contact section (simple email button)
+  [params.contact]
+    enable = true
+    title = "Get in Touch"
+    content = "Have an opportunity or question? I’d love to connect."
+    email = "me@alexanderclines.com"
+    btnName = "Email Me"
 
 [menu]
   [[menu.main]]
@@ -59,7 +125,6 @@ cleanDestinationDir = true
     url = "/experience/"
     weight = 4
   [[menu.main]]
-    name = "CV"
-    url = "/cv/"
+    name = "Resume"
+    url = "/resume.pdf"
     weight = 5
-

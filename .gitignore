@@ -9,3 +9,4 @@ public/
 hugo_stats.json
 node_modules/
 scratch/
+_vendor/
