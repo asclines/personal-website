@@ -8,17 +8,20 @@ location: "California"
 duration: "2017–2020"
 ---
 
-SWE on an NLP team under Google AI Language focused on applying new NLP technologies towards solutions for Google.
+SWE on an NLP team under Google AI Language applying new NLP technologies across research, infrastructure, and tooling.
 
-**Research**
+Research
 
-- Implemented unsupervised methods, including clustering, for managing large quantities of text.
+- Implemented unsupervised methods (e.g., clustering) for managing large text corpora.
 - Utilized LSTM networks.
-- Worked on distillation of BERT models.
+- Distilled BERT models.
 
-**Infrastructure**
+Infrastructure
 
-- Developed and improved many pipelines/frameworks related to NLP data, with a focus on scalable, distributed computing in C++ across a wide variety of internal tools.
-- Contributed to datasets including “A Challenge Set and Methods for Noun‑Verb Ambiguity” and others targeted for open sourcing.
+- Developed and improved NLP data pipelines/frameworks using scalable distributed computing in C++ with Google’s internal tooling.
 - Contributed to the deployment of several models (including Sentiment Analysis) launched in production.
 
+Frontend / Tools
+
+- Designed, implemented, and supported Angular + TypeScript demo tools for NLP models.
+- Created proof‑of‑concepts, researcher diagnostic tools, and generalized demos for internal adoption.

@@ -22,6 +22,14 @@ skill_categories:
         level: 75
         years: "4+"
         description: "General backend and tooling"
+  - name: "Web & Frontend"
+    skills:
+      - name: "TypeScript"
+        level: 50
+        description: "Past experience; not active recently"
+      - name: "Angular"
+        level: 50
+        description: "Internal demos and tooling (historical)"
   - name: "Platforms"
     skills:
       - name: "Apple OS Development"

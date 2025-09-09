@@ -71,6 +71,14 @@ cleanDestinationDir = true
       info = { enable = true, content = "Google AI Language — research and infrastructure." }
       content = "• NLP pipelines and distributed systems (C++)\n• Model distillation and dataset contributions"
 
+    [[params.experience.items]]
+      job = "Software Engineer Intern"
+      company = "USAA"
+      companyUrl = "https://www.usaa.com/"
+      date = "2015 – 2016"
+      info = { enable = true, content = "Backend + mobile internships across two summers." }
+      content = "• 2016: iOS (Swift), Android (Java), and Polymer cross‑platform work\n• 2015: Backend infrastructure; RESTful API with MySQL and J2EE"
+
   # Education section
   [params.education]
     enable = true
@@ -97,6 +105,23 @@ cleanDestinationDir = true
     email = "me@alexanderclines.com"
     btnName = "Email Me"
 
+  # Homepage achievements (lightweight projects/datasets)
+  [params.achievements]
+    enable = true
+    title = "Accomplishments"
+
+    [[params.achievements.items]]
+      title = "Dataset Contribution — Noun‑Verb Ambiguity"
+      content = "Acknowledged contribution to ‘A Challenge Set and Methods for Noun‑Verb Ambiguity’ (ACL 2018)."
+
+    [[params.achievements.items]]
+      title = "Multi‑Agent Simulation Engine (TTU Math)"
+      content = "Contributed to a GPU‑cluster simulation engine using OpenMPI, Thrust, Boost; optimized multi‑GPU transfer; C++ templates and CUDA."
+
+    [[params.achievements.items]]
+      title = "Opinion Classifier Research Assistant (TTU CS)"
+      content = "Explored classification algorithms; Python scripts to apply algorithms and collect results."
+
 [menu]
   [[menu.main]]
     name = "About"
@@ -115,13 +140,17 @@ cleanDestinationDir = true
     url = "#education"
     weight = 4
   [[menu.main]]
+    name = "Accomplishments"
+    url = "#achievements"
+    weight = 5
+  [[menu.main]]
     name = "Get in Touch"
     url = "#contact"
-    weight = 5
+    weight = 6
   [[menu.main]]
     name = "Resume"
     url = "/resume.pdf"
-    weight = 6
+    weight = 7
 
 [params.navbar]
   [params.navbar.menus]
