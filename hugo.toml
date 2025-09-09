@@ -52,9 +52,7 @@ cleanDestinationDir = true
       company = "Apple"
       companyUrl = "https://www.apple.com/"
       date = "2023 – Present"
-      [params.experience.items.info]
-        enable = true
-        content = "Leading on‑device NLP efforts within Apple Intelligence."
+      info = { enable = true, content = "Leading on‑device NLP efforts within Apple Intelligence." }
       content = "• Managing teams delivering on‑device NLP capabilities\n• Driving reliability, performance, and user impact"
 
     [[params.experience.items]]
@@ -62,9 +60,7 @@ cleanDestinationDir = true
       company = "Apple"
       companyUrl = "https://www.apple.com/"
       date = "2020 – 2023"
-      [params.experience.items.info]
-        enable = true
-        content = "Siri Natural Language Platform — on‑device from iOS 15."
+      info = { enable = true, content = "Siri Natural Language Platform — on‑device from iOS 15." }
       content = "• Performance optimization of NL models\n• On‑device platform expansion beyond Siri\n• Objective‑C/Swift, Python for analysis"
 
     [[params.experience.items]]
@@ -72,9 +68,7 @@ cleanDestinationDir = true
       company = "Google"
       companyUrl = "https://www.google.com/"
       date = "2017 – 2020"
-      [params.experience.items.info]
-        enable = true
-        content = "Google AI Language — research and infrastructure."
+      info = { enable = true, content = "Google AI Language — research and infrastructure." }
       content = "• NLP pipelines and distributed systems (C++)\n• Model distillation and dataset contributions"
 
   # Education section
@@ -86,17 +80,13 @@ cleanDestinationDir = true
     [[params.education.items]]
       title = "B.S. Computer Science"
       date = "2013 – 2017"
-      [params.education.items.school]
-        name = "Texas Tech University"
-        url = "https://www.ttu.edu/"
+      school = { name = "Texas Tech University", url = "https://www.ttu.edu/" }
       content = "Edward E. Whitacre Jr. College of Engineering"
 
     [[params.education.items]]
       title = "B.S. Mathematics"
       date = "2013 – 2017"
-      [params.education.items.school]
-        name = "Texas Tech University"
-        url = "https://www.ttu.edu/"
+      school = { name = "Texas Tech University", url = "https://www.ttu.edu/" }
       content = "College of Arts & Sciences"
 
   # Contact section (simple email button)
