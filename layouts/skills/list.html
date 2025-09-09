@@ -10,10 +10,11 @@
 
     <style>
       .skill-item{margin-bottom:1rem}
-      .skill-header{display:flex;justify-content:space-between;align-items:center}
-      .skill-bar{background:#e9ecef;border-radius:6px;height:10px;overflow:hidden}
-      .skill-bar-fill{background:var(--bs-primary,#478079);height:100%;border-radius:6px}
-      .skill-meta{display:flex;justify-content:space-between;font-size:.9rem;color:#6c757d}
+      .tier{border-radius:999px;padding:.2rem .7rem;font-weight:600}
+      .tier-advanced{background:#1987541a;color:#198754;border:1px solid #19875433}
+      .tier-proficient{background:#6f42c11a;color:#6f42c1;border:1px solid #6f42c133}
+      .tier-intermediate{background:#fd7e141a;color:#fd7e14;border:1px solid #fd7e1433}
+      .tier-novice{background:#6c757d1a;color:#6c757d;border:1px solid #6c757d33}
     </style>
 
     {{ range .Params.skill_categories }}
@@ -22,19 +23,19 @@
         <h2 class="mb-4">{{ .name }}</h2>
         <div class="row">
           {{ range .skills }}
+          {{ $lvl := (default 0 .level) }}
+          {{ $tier := "" }}
+          {{ if ge $lvl 90 }}{{ $tier = "Advanced" }}
+          {{ else if ge $lvl 75 }}{{ $tier = "Proficient" }}
+          {{ else if ge $lvl 60 }}{{ $tier = "Intermediate" }}
+          {{ else }}{{ $tier = "Novice" }}{{ end }}
           <div class="col-md-6">
             <div class="skill-item">
-              <div class="skill-header">
+              <div class="d-flex justify-content-between align-items-center">
                 <h3 class="h5 m-0">{{ .name }}</h3>
-                {{ with .level }}<span class="skill-level">{{ . }}%</span>{{ end }}
+                <span class="tier tier-{{ lower $tier }}">{{ $tier }}</span>
               </div>
-              <div class="skill-bar my-2">
-                <div class="skill-bar-fill" style="width: {{ default 0 .level }}%;"></div>
-              </div>
-              <div class="skill-meta">
-                {{ with .years }}<span class="skill-years">{{ . }} years</span>{{ end }}
-                {{ with .description }}<span class="skill-description">{{ . }}</span>{{ end }}
-              </div>
+              {{ with .description }}<div class="text-muted mt-1">{{ . }}</div>{{ end }}
             </div>
           </div>
           {{ end }}
@@ -45,4 +46,3 @@
   </div>
 </section>
 {{ end }}
-

@@ -10,17 +10,21 @@
         <h4 class="mb-3">{{ .name }}</h4>
         <div class="row">
           {{ range .skills }}
+          {{ $lvl := (default 0 .level) }}
+          {{ $tier := "" }}
+          {{ if ge $lvl 90 }}{{ $tier = "Advanced" }}
+          {{ else if ge $lvl 75 }}{{ $tier = "Proficient" }}
+          {{ else if ge $lvl 60 }}{{ $tier = "Intermediate" }}
+          {{ else }}{{ $tier = "Novice" }}{{ end }}
           <div class="col-md-6 mb-3">
-            <div class="d-flex justify-content-between">
-              <strong>{{ .name }}</strong>
-              {{ with .level }}<span>{{ . }}%</span>{{ end }}
-            </div>
-            <div class="progress" style="height:10px;">
-              <div class="progress-bar" role="progressbar" style="width: {{ default 0 .level }}%;"></div>
-            </div>
-            <div class="d-flex justify-content-between text-muted" style="font-size:.9rem;">
-              {{ with .years }}<span>{{ . }} years</span>{{ end }}
-              {{ with .description }}<span>{{ . }}</span>{{ end }}
+            <div class="skill-item">
+              <div class="d-flex justify-content-between align-items-center">
+                <strong>{{ .name }}</strong>
+                <span class="badge tier tier-{{ lower $tier }}">{{ $tier }}</span>
+              </div>
+              {{ with .description }}
+              <div class="text-muted mt-1" style="font-size:.95rem;">{{ . }}</div>
+              {{ end }}
             </div>
           </div>
           {{ end }}
@@ -30,9 +34,11 @@
     </div>
   </div>
   <style>
-    #skills .progress{background:#e9ecef;border-radius:6px;overflow:hidden}
-    #skills .progress-bar{background:var(--bs-primary,#007bff)}
+    #skills .tier{border-radius:999px;padding:.15rem .6rem;font-weight:600}
+    #skills .tier-advanced{background:#1987541a;color:#198754;border:1px solid #19875433}
+    #skills .tier-proficient{background:#6f42c11a;color:#6f42c1;border:1px solid #6f42c133}
+    #skills .tier-intermediate{background:#fd7e141a;color:#fd7e14;border:1px solid #fd7e1433}
+    #skills .tier-novice{background:#6c757d1a;color:#6c757d;border:1px solid #6c757d33}
   </style>
 </section>
 {{ end }}
-
