@@ -1,0 +1,38 @@
+{{/* Homepage Skills section pulling from content/skills/_index.md */}}
+{{ $skillsPage := site.GetPage "skills" }}
+{{ if $skillsPage }}
+<section id="skills" class="py-5">
+  <div class="container">
+    <h3 class="text-center">Skills</h3>
+    <div class="row justify-content-center px-3 px-md-5 pt-4">
+      {{ range $skillsPage.Params.skill_categories }}
+      <div class="col-12 mb-4">
+        <h4 class="mb-3">{{ .name }}</h4>
+        <div class="row">
+          {{ range .skills }}
+          <div class="col-md-6 mb-3">
+            <div class="d-flex justify-content-between">
+              <strong>{{ .name }}</strong>
+              {{ with .level }}<span>{{ . }}%</span>{{ end }}
+            </div>
+            <div class="progress" style="height:10px;">
+              <div class="progress-bar" role="progressbar" style="width: {{ default 0 .level }}%;"></div>
+            </div>
+            <div class="d-flex justify-content-between text-muted" style="font-size:.9rem;">
+              {{ with .years }}<span>{{ . }} years</span>{{ end }}
+              {{ with .description }}<span>{{ . }}</span>{{ end }}
+            </div>
+          </div>
+          {{ end }}
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+  <style>
+    #skills .progress{background:#e9ecef;border-radius:6px;overflow:hidden}
+    #skills .progress-bar{background:var(--bs-primary,#007bff)}
+  </style>
+</section>
+{{ end }}
+
