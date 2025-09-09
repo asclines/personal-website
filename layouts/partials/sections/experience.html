@@ -1,0 +1,40 @@
+{{/* Override Experience section to use an education-like card layout */}}
+{{ if .Site.Params.experience.enable | default false }}
+<section id="experience" class="py-5">
+  <div class="container">
+    <h3 class="text-center">{{ .Site.Params.experience.title | default "Experience" }}</h3>
+    <div class="row justify-content-center py-5">
+      {{ range .Site.Params.experience.items }}
+      <div class="col-12 p-0">
+        <div class="row align-items-center justify-content-center m-1 mb-4">
+          <div class="col-md-9">
+            <div class="card">
+              <div class="card-body">
+                <div class="float-end">
+                  <small>{{ .date }}</small>
+                </div>
+                <h5 class="card-title">{{ .job }}</h5>
+                {{ if .companyUrl }}
+                  <a href="{{ .companyUrl }}" target="_blank"><h6>{{ .company }}</h6></a>
+                {{ else }}
+                  <h6>{{ .company }}</h6>
+                {{ end }}
+                {{ with .info }}
+                  {{ if .enable }}
+                  <div class="py-1 text-muted"><small>{{ .content }}</small></div>
+                  {{ end }}
+                {{ end }}
+                <div class="py-1 experience-content">
+                  {{ .content | markdownify }}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+
