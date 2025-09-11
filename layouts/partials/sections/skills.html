@@ -12,10 +12,8 @@
           {{ range .skills }}
           {{ $lvl := (default 0 .level) }}
           {{ $tier := "" }}
-          {{ if ge $lvl 90 }}{{ $tier = "Advanced" }}
-          {{ else if ge $lvl 75 }}{{ $tier = "Proficient" }}
-          {{ else if ge $lvl 60 }}{{ $tier = "Intermediate" }}
-          {{ else }}{{ $tier = "Novice" }}{{ end }}
+          {{ if ge $lvl 75 }}{{ $tier = "Proficient" }}
+          {{ else }}{{ $tier = "Familiar" }}{{ end }}
           <div class="col-md-6 mb-3">
             <div class="skill-item">
               <div class="d-flex justify-content-between align-items-center">
@@ -35,10 +33,8 @@
   </div>
   <style>
     #skills .tier{border-radius:999px;padding:.15rem .6rem;font-weight:600}
-    #skills .tier-advanced{background:#1987541a;color:#198754;border:1px solid #19875433}
-    #skills .tier-proficient{background:#6f42c11a;color:#6f42c1;border:1px solid #6f42c133}
-    #skills .tier-intermediate{background:#fd7e141a;color:#fd7e14;border:1px solid #fd7e1433}
-    #skills .tier-novice{background:#6c757d1a;color:#6c757d;border:1px solid #6c757d33}
+    #skills .tier-proficient{background:#1987541a;color:#198754;border:1px solid #19875433}
+    #skills .tier-familiar{background:#6c757d1a;color:#6c757d;border:1px solid #6c757d33}
   </style>
 </section>
 {{ end }}

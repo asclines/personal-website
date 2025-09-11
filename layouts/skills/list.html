@@ -11,10 +11,8 @@
     <style>
       .skill-item{margin-bottom:1rem}
       .tier{border-radius:999px;padding:.2rem .7rem;font-weight:600}
-      .tier-advanced{background:#1987541a;color:#198754;border:1px solid #19875433}
-      .tier-proficient{background:#6f42c11a;color:#6f42c1;border:1px solid #6f42c133}
-      .tier-intermediate{background:#fd7e141a;color:#fd7e14;border:1px solid #fd7e1433}
-      .tier-novice{background:#6c757d1a;color:#6c757d;border:1px solid #6c757d33}
+      .tier-proficient{background:#1987541a;color:#198754;border:1px solid #19875433}
+      .tier-familiar{background:#6c757d1a;color:#6c757d;border:1px solid #6c757d33}
     </style>
 
     {{ range .Params.skill_categories }}
@@ -25,10 +23,8 @@
           {{ range .skills }}
           {{ $lvl := (default 0 .level) }}
           {{ $tier := "" }}
-          {{ if ge $lvl 90 }}{{ $tier = "Advanced" }}
-          {{ else if ge $lvl 75 }}{{ $tier = "Proficient" }}
-          {{ else if ge $lvl 60 }}{{ $tier = "Intermediate" }}
-          {{ else }}{{ $tier = "Novice" }}{{ end }}
+          {{ if ge $lvl 75 }}{{ $tier = "Proficient" }}
+          {{ else }}{{ $tier = "Familiar" }}{{ end }}
           <div class="col-md-6">
             <div class="skill-item">
               <div class="d-flex justify-content-between align-items-center">

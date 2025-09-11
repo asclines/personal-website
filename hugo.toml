@@ -17,10 +17,12 @@ cleanDestinationDir = true
     enable = true
     intro = "Hi, I'm"
     title = "Alexander Clines"
-    subtitle = "Building high‑performing teams and on‑device NLP."
-    content = "Technology leader focused on on‑device natural language understanding and impactful user experiences."
+    subtitle = "I build AI-driven experiences at Apple that reach users worldwide."
+    content = "Alexander Clines is a Software Engineering Manager at Apple, driving the integration of AI into products that shape how people use technology. He brings technical expertise, product intuition, and a passion for delivering meaningful user impact."
     image = "/images/about/user-picture.png"
     roundImage = true
+    [params.hero.bottomImage]
+      enable = false
     [params.hero.button]
       enable = true
       name = "Resume"
@@ -40,7 +42,7 @@ cleanDestinationDir = true
   [params.about]
     enable = true
     title = "About"
-    content = "Alexander Clines is an Engineering Manager focused on Siri Natural Language Understanding and Apple Intelligence. His work spans building high‑performing teams, advancing on‑device natural language capabilities, and delivering user‑impacting features at scale."
+    content = "I thrive on solving interesting problems, whether it’s building AI-powered experiences used by millions of people, leading engineering teams through ambiguity, or diving into production issues.\n\nMy career began at Google as a Software Engineer, where I worked on large-scale natural language processing systems and machine learning frameworks. Apple gave me the opportunity to grow into senior engineering and, later, management—roles where I’ve combined technical leadership with a passion for building products that matter.\n\nI believe managers should stay technical: writing code, providing meaningful technical feedback, and setting the tone for ownership and autonomy. I coach my team to think in terms of user impact, to thrive in ambiguity, and to take pride in building things that directly improve people’s lives.\n\nOutside of work, you’ll usually find me exploring new food and wine, camping or hiking in the Santa Cruz Mountains, or spending time with my wife Katie and our corgi, Princess Leia."
 
   # Experience section (compact highlight)
   [params.experience]
@@ -48,18 +50,21 @@ cleanDestinationDir = true
     title = "Experience"
     
     [[params.experience.items]]
-      job = "Engineering Manager"
+      job = "Software Engineering Manager"
       company = "Apple"
       companyUrl = "https://www.apple.com/"
       date = "2023 – Present"
-      info = { enable = true, content = "Leading on‑device NLP efforts within Apple Intelligence." }
+      info = { enable = true, content = "Siri and Apple Intelligence across Apple’s ecosystem." }
       content = """
-      - Managing teams delivering on‑device NLP capabilities
-      - Driving reliability, performance, and user impact
+      At Apple, I’ve had the opportunity to work on Siri and Apple Intelligence, helping shape how AI shows up across iOS, macOS, tvOS, and visionOS.
+
+      - Led the effort to bring on-device natural language models beyond Siri and into core apps like Photos and Reminders, partnering with architects and cross‑functional teams to drive adoption.
+      - Stay hands‑on in design and code; support production issues and integrations with modeling teams during high‑stakes moments.
+      - Build teams that thrive in ambiguity with an emphasis on ownership, autonomy, and user impact.
       """
 
     [[params.experience.items]]
-      job = "Software Engineer"
+      job = "Senior Software Engineer"
       company = "Apple"
       companyUrl = "https://www.apple.com/"
       date = "2020 – 2023"
@@ -77,8 +82,11 @@ cleanDestinationDir = true
       date = "2017 – 2020"
       info = { enable = true, content = "Google AI Language — research and infrastructure." }
       content = """
-      - NLP pipelines and distributed systems (C++)
-      - Model distillation and dataset contributions
+      At Google, I worked on large‑scale natural language processing and machine learning systems.
+
+      - Implemented scalable clustering methods and presented the work at an internal Google Research conference.
+      - Optimized BERT models for production via distillation and related techniques; explored LSTM applications in Google Ads.
+      - Contributed to frameworks for sentiment analysis and other NLP tasks; acknowledged in the EMNLP 2018 paper “A Challenge Set and Methods for Noun‑Verb Ambiguity.”
       """
 
     [[params.experience.items]]
@@ -102,13 +110,13 @@ cleanDestinationDir = true
       title = "B.S. Computer Science"
       date = "2013 – 2017"
       school = { name = "Texas Tech University", url = "https://www.ttu.edu/" }
-      content = "Edward E. Whitacre Jr. College of Engineering"
+      content = "Edward E. Whitacre Jr. College of Engineering — Focused on GPU computing for mathematical modeling (bioinformatics)."
 
     [[params.education.items]]
       title = "B.S. Mathematics"
       date = "2013 – 2017"
       school = { name = "Texas Tech University", url = "https://www.ttu.edu/" }
-      content = "College of Arts & Sciences"
+      content = "College of Arts & Sciences — ICPC programming team, ACM, and a student‑led CS club."
 
   # Contact section (simple email button)
   [params.contact]
@@ -122,6 +130,10 @@ cleanDestinationDir = true
   [params.achievements]
     enable = true
     title = "Accomplishments"
+
+    [[params.achievements.items]]
+      title = "Internal Google Research Conference (2017)"
+      content = "Presented work on unsupervised clustering methods for perspective detection in news articles."
 
     [[params.achievements.items]]
       title = "Dataset Contribution — Noun‑Verb Ambiguity"
@@ -166,6 +178,7 @@ cleanDestinationDir = true
     weight = 7
 
 [params.navbar]
+  disableSearch = true
   [params.navbar.menus]
     disableAbout = true
     disableExperience = true
