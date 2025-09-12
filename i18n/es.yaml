@@ -1,0 +1,62 @@
+## Meta tags
+- id: "meta_title"
+  translation: "Alexander Clines - Software Engineering Manager"
+- id: "meta_description"
+  translation: "Sitio web personal y portafolio de Alexander Clines, Software Engineering Manager."
+- id: "meta_keywords"
+  translation: "alexander clines, software engineering, portfolio, sitio personal"
+- id: "meta_author"
+  translation: "Adrián Moreno Peña"
+- id: "meta_image"
+  translation: "/img/general/og-image.jpg"
+
+## Header
+- id: "logo_alt"
+  translation: "Alexander Clines logo"
+- id: "logo_text1"
+  translation: "Genial"
+- id: "logo_text2"
+  translation: "Nombre"
+
+
+## General
+- id: "skipToMainContent"
+  translation: "Saltar al contenido principal"
+- id: "toggle_navigation"
+  translation: "Mostrar navegación"
+
+## Footer
+- id: "footer_notice"
+  translation: "© Alexander Clines. Todos los derechos reservados."
+- id: "language"
+  translation: "Idioma"
+- id: "toggle_theme"
+  translation: "Seleccionar esquema de color"
+- id: "theme_light"
+  translation: "☀️ Claro"
+- id: "theme_dark"
+  translation: "🌑 Oscuro"
+- id: "theme_auto"
+  translation: "✨ Auto"
+
+## Homepage head title
+- id: "head_title"
+  translation: "Sitio web personal de Alexander Clines"
+- id: "head_description"
+  translation: "Este tema de Hugo (Adritian) está basado en Bootstrap y tiene características que lo hacen adecuado para un sitio personal, un portafolio u otros tipos de aplicaciones de una sola página."
+
+## Blog
+- id: "read_more"
+  translation: "Leer más"
+- id: "published_on"
+  translation: "Publicado el "
+- id: "continue_reading"
+  translation: "Continuar leyendo"
+
+## 404 Page
+- id: "404_title"  
+  translation: "Página no encontrada"
+- id: "404_description"
+  translation: "Lo sentimos, pero la página que buscabas no pudo ser encontrada."
+- id: "404_button"
+  translation: "Volver al inicio"

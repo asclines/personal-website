@@ -1,0 +1,40 @@
+{{/* Homepage Skills section pulling from content/skills/_index.md */}}
+{{ $skillsPage := site.GetPage "skills" }}
+{{ if $skillsPage }}
+<section id="skills" class="py-5">
+  <div class="container">
+    <h3 class="text-center">Skills</h3>
+    <div class="row justify-content-center px-3 px-md-5 pt-4">
+      {{ range $skillsPage.Params.skill_categories }}
+      <div class="col-12 mb-4">
+        <h4 class="mb-3">{{ .name }}</h4>
+        <div class="row">
+          {{ range .skills }}
+          {{ $lvl := (default 0 .level) }}
+          {{ $tier := "" }}
+          {{ if ge $lvl 75 }}{{ $tier = "Proficient" }}
+          {{ else }}{{ $tier = "Familiar" }}{{ end }}
+          <div class="col-md-6 mb-3">
+            <div class="skill-item">
+              <div class="d-flex justify-content-between align-items-center">
+                <strong>{{ .name }}</strong>
+                <span class="badge tier tier-{{ lower $tier }}">{{ $tier }}</span>
+              </div>
+              {{ with .description }}
+              <div class="text-muted mt-1" style="font-size:.95rem;">{{ . }}</div>
+              {{ end }}
+            </div>
+          </div>
+          {{ end }}
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+  <style>
+    #skills .tier{border-radius:999px;padding:.15rem .6rem;font-weight:600}
+    #skills .tier-proficient{background:#1987541a;color:#198754;border:1px solid #19875433}
+    #skills .tier-familiar{background:#6c757d1a;color:#6c757d;border:1px solid #6c757d33}
+  </style>
+</section>
+{{ end }}

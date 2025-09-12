@@ -1,0 +1,190 @@
+baseURL = "https://alexanderclines.com/"
+title = "Alexander Clines"
+languageCode = "en-us"
+defaultContentLanguage = "en"
+cleanDestinationDir = true
+
+[module]
+  [[module.imports]]
+    path = "github.com/gurusabarish/hugo-profile"
+
+[params]
+  subtitle = "Software Engineering Manager"
+  description = "Personal website for Alexander Clines"
+  # Use legacy favicon across the site
+  favicon = "/favicon.ico"
+
+  # Homepage hero (Hugo Profile expects `params.hero`)
+  [params.hero]
+    enable = true
+    intro = "Hi, I'm"
+    title = "Alexander Clines"
+    subtitle = "I build AI-driven experiences at Apple that reach users worldwide."
+    content = "Alexander Clines is a Software Engineering Manager at Apple, driving the integration of AI into products that shape how people use technology. He brings technical expertise, product intuition, and a passion for delivering meaningful user impact."
+    image = "/images/about/user-picture.png"
+    roundImage = true
+    [params.hero.bottomImage]
+      enable = false
+    [params.hero.button]
+      enable = true
+      name = "Resume"
+      url = "/resume.pdf"
+      newPage = true
+      download = false
+    [params.hero.socialLinks]
+      # Font Awesome icons
+      [[params.hero.socialLinks.fontAwesomeIcons]]
+        icon = "fas fa-envelope"
+        url = "mailto:me@alexanderclines.com"
+      [[params.hero.socialLinks.fontAwesomeIcons]]
+        icon = "fab fa-linkedin"
+        url = "https://www.linkedin.com/in/alexander-clines/"
+
+  # About section
+  [params.about]
+    enable = true
+    title = "About"
+    content = "I thrive on solving interesting problems, whether it’s building AI-powered experiences used by millions of people, leading engineering teams through ambiguity, or diving into production issues.\n\nMy career began at Google as a Software Engineer, where I worked on large-scale natural language processing systems and machine learning frameworks. Apple gave me the opportunity to grow into senior engineering and, later, management—roles where I’ve combined technical leadership with a passion for building products that matter.\n\nI believe managers should stay technical: writing code, providing meaningful technical feedback, and setting the tone for ownership and autonomy. I coach my team to think in terms of user impact, to thrive in ambiguity, and to take pride in building things that directly improve people’s lives.\n\nOutside of work, you’ll usually find me exploring new food and wine, camping or hiking in the Santa Cruz Mountains, or spending time with my wife Katie and our corgi, Princess Leia."
+
+  # Experience section (compact highlight)
+  [params.experience]
+    enable = true
+    title = "Experience"
+    
+    [[params.experience.items]]
+      job = "Software Engineering Manager"
+      company = "Apple"
+      companyUrl = "https://www.apple.com/"
+      date = "2023 – Present"
+      info = { enable = true, content = "Siri and Apple Intelligence across Apple’s ecosystem." }
+      content = """
+      At Apple, I’ve had the opportunity to work on Siri and Apple Intelligence, helping shape how AI shows up across iOS, macOS, tvOS, and visionOS.
+
+      - Led the effort to bring on-device natural language models beyond Siri and into core apps like Photos and Reminders, partnering with architects and cross‑functional teams to drive adoption.
+      - Stay hands‑on in design and code; support production issues and integrations with modeling teams during high‑stakes moments.
+      - Build teams that thrive in ambiguity with an emphasis on ownership, autonomy, and user impact.
+      """
+
+    [[params.experience.items]]
+      job = "Senior Software Engineer"
+      company = "Apple"
+      companyUrl = "https://www.apple.com/"
+      date = "2020 – 2023"
+      info = { enable = true, content = "Siri Natural Language Platform — on‑device from iOS 15." }
+      content = """
+      - Performance optimization of NL models
+      - On‑device platform expansion beyond Siri
+      - Objective‑C/Swift, Python for analysis
+      """
+
+    [[params.experience.items]]
+      job = "Software Engineer"
+      company = "Google"
+      companyUrl = "https://www.google.com/"
+      date = "2017 – 2020"
+      info = { enable = true, content = "Google AI Language — research and infrastructure." }
+      content = """
+      At Google, I worked on large‑scale natural language processing and machine learning systems.
+
+      - Implemented scalable clustering methods and presented the work at an internal Google Research conference.
+      - Optimized BERT models for production via distillation and related techniques; explored LSTM applications in Google Ads.
+      - Contributed to frameworks for sentiment analysis and other NLP tasks; acknowledged in the EMNLP 2018 paper “A Challenge Set and Methods for Noun‑Verb Ambiguity.”
+      """
+
+    [[params.experience.items]]
+      job = "Software Engineer Intern"
+      company = "USAA"
+      companyUrl = "https://www.usaa.com/"
+      date = "2015 – 2016"
+      info = { enable = true, content = "Backend + mobile internships across two summers." }
+      content = """
+      - 2016: iOS (Swift), Android (Java), and Polymer cross‑platform work
+      - 2015: Backend infrastructure; RESTful API with MySQL and J2EE
+      """
+
+  # Education section
+  [params.education]
+    enable = true
+    title = "Education"
+    index = true
+    
+    [[params.education.items]]
+      title = "B.S. Computer Science"
+      date = "2013 – 2017"
+      school = { name = "Texas Tech University", url = "https://www.ttu.edu/" }
+      content = "Edward E. Whitacre Jr. College of Engineering — Focused on GPU computing for mathematical modeling (bioinformatics)."
+
+    [[params.education.items]]
+      title = "B.S. Mathematics"
+      date = "2013 – 2017"
+      school = { name = "Texas Tech University", url = "https://www.ttu.edu/" }
+      content = "College of Arts & Sciences — ICPC programming team, ACM, and a student‑led CS club."
+
+  # Contact section (simple email button)
+  [params.contact]
+    enable = true
+    title = "Get in Touch"
+    content = "Have an opportunity or question? I’d love to connect."
+    email = "me@alexanderclines.com"
+    btnName = "Email Me"
+
+  # Homepage achievements (lightweight projects/datasets)
+  [params.achievements]
+    enable = true
+    title = "Accomplishments"
+
+    [[params.achievements.items]]
+      title = "Internal Google Research Conference (2017)"
+      content = "Presented work on unsupervised clustering methods for perspective detection in news articles."
+
+    [[params.achievements.items]]
+      title = "Dataset Contribution — Noun‑Verb Ambiguity"
+      content = "Acknowledged contribution to ‘A Challenge Set and Methods for Noun‑Verb Ambiguity’ (ACL 2018)."
+
+    [[params.achievements.items]]
+      title = "Multi‑Agent Simulation Engine (TTU Math)"
+      content = "Contributed to a GPU‑cluster simulation engine using OpenMPI, Thrust, Boost; optimized multi‑GPU transfer; C++ templates and CUDA."
+
+    [[params.achievements.items]]
+      title = "Opinion Classifier Research Assistant (TTU CS)"
+      content = "Explored classification algorithms; Python scripts to apply algorithms and collect results."
+
+[menu]
+  [[menu.main]]
+    name = "About"
+    url = "#about"
+    weight = 1
+  [[menu.main]]
+    name = "Experience"
+    url = "#experience"
+    weight = 2
+  [[menu.main]]
+    name = "Skills"
+    url = "#skills"
+    weight = 3
+  [[menu.main]]
+    name = "Education"
+    url = "#education"
+    weight = 4
+  [[menu.main]]
+    name = "Accomplishments"
+    url = "#achievements"
+    weight = 5
+  [[menu.main]]
+    name = "Get in Touch"
+    url = "#contact"
+    weight = 6
+  [[menu.main]]
+    name = "Resume"
+    url = "/resume.pdf"
+    weight = 7
+
+[params.navbar]
+  disableSearch = true
+  [params.navbar.menus]
+    disableAbout = true
+    disableExperience = true
+    disableEducation = true
+    disableProjects = true
+    disableAchievements = true
+    disableContact = true

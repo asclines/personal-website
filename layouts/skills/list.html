@@ -1,0 +1,44 @@
+{{ define "main" }}
+<section class="site-skills-section py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h1 class="site-skills-title">{{ .Title }}</h1>
+        <div class="site-skills-description">{{ .Content }}</div>
+      </div>
+    </div>
+
+    <style>
+      .skill-item{margin-bottom:1rem}
+      .tier{border-radius:999px;padding:.2rem .7rem;font-weight:600}
+      .tier-proficient{background:#1987541a;color:#198754;border:1px solid #19875433}
+      .tier-familiar{background:#6c757d1a;color:#6c757d;border:1px solid #6c757d33}
+    </style>
+
+    {{ range .Params.skill_categories }}
+    <div class="row mt-5">
+      <div class="col-12">
+        <h2 class="mb-4">{{ .name }}</h2>
+        <div class="row">
+          {{ range .skills }}
+          {{ $lvl := (default 0 .level) }}
+          {{ $tier := "" }}
+          {{ if ge $lvl 75 }}{{ $tier = "Proficient" }}
+          {{ else }}{{ $tier = "Familiar" }}{{ end }}
+          <div class="col-md-6">
+            <div class="skill-item">
+              <div class="d-flex justify-content-between align-items-center">
+                <h3 class="h5 m-0">{{ .name }}</h3>
+                <span class="tier tier-{{ lower $tier }}">{{ $tier }}</span>
+              </div>
+              {{ with .description }}<div class="text-muted mt-1">{{ . }}</div>{{ end }}
+            </div>
+          </div>
+          {{ end }}
+        </div>
+      </div>
+    </div>
+    {{ end }}
+  </div>
+</section>
+{{ end }}

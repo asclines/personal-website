@@ -1,0 +1,28 @@
+{{/*
+  Custom override for education-list shortcode to render degree field with line breaks.
+  This assumes .Params.degree is available in the context.
+*/}}
+
+<div class="education-list">
+  <h2>{{ .Get "title" }}</h2>
+  {{ with .Get "intro" }}<p>{{ . }}</p>{{ end }}
+  <ul>
+    {{ if .Get "items" }}
+      {{ range (split (.Get "items") ";") }}
+        <li>{{ trim . " " }}</li>
+      {{ end }}
+    {{ else }}
+      {{ if and .Site (reflect.IsSlice .Site.RegularPages) }}
+        {{ $pages := .Site.RegularPages | where "Section" "education" }}
+        {{ range $pages }}
+          <li>
+            <strong>{{ .Params.university }}</strong> ({{ .Params.year }})<br>
+            <span>{{ .Params.degree | replace "\n" "<br>" | safeHTML }}</span>
+          </li>
+        {{ end }}
+      {{ else }}
+        <li>No education data available.</li>
+      {{ end }}
+    {{ end }}
+  </ul>
+</div>

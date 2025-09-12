@@ -1,0 +1,45 @@
+/* Custom overrides to prevent horizontal scrolling in text boxes,
+   while preserving the theme’s base styles. */
+
+/* Inputs/Textareas: size to container */
+input[type="text"],
+input[type="email"],
+input[type="search"],
+input[type="url"],
+input[type="tel"],
+input[type="password"],
+textarea {
+  box-sizing: border-box;
+  max-width: 100%;
+  width: 100%;
+}
+
+/* Prevent horizontal scrollbars in multi-line text boxes */
+textarea {
+  overflow-x: hidden;          /* hide horizontal overflow */
+  white-space: pre-wrap;       /* preserve line breaks, allow wrapping */
+  word-break: break-word;      /* break long words/URLs */
+  resize: vertical;            /* allow vertical resize only */
+}
+
+/* Experience markdown content often renders as <pre><code> */
+.experience-content {
+  overflow-x: hidden;          /* guard container */
+}
+.experience-content pre,
+.experience-content code {
+  white-space: pre-wrap;       /* wrap long lines */
+  word-break: break-word;      /* break long words/URLs */
+  overflow-wrap: anywhere;     /* break unbroken strings */
+  overflow-x: hidden;          /* no horizontal scrollbar */
+  background: transparent !important; /* avoid white box backgrounds */
+  color: inherit;              /* keep text readable in theme */
+  border: 0;                   /* remove code borders if any */
+}
+
+/* Guard against container-level horizontal overflow in forms */
+.contact-section .contact-form form,
+.newsletter-form {
+  overflow-x: hidden;
+}
+

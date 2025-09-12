@@ -1,0 +1,13 @@
+{{/* Simple wrapper section with optional title and centered alignment */}}
+{{ $title := .Get "title" }}
+{{ $centered := .Get "centered" }}
+
+<section class="text-section section">
+  {{ if $title }}
+    <h2 {{ if eq $centered "true" }}style="text-align:center"{{ end }}>{{ $title }}</h2>
+  {{ end }}
+  <div {{ if eq $centered "true" }}style="text-align:center"{{ end }}>
+    {{ .Inner }}
+  </div>
+</section>
+
