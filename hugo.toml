@@ -11,6 +11,8 @@ cleanDestinationDir = true
 [params]
   subtitle = "Software Engineering Manager"
   description = "Personal website for Alexander Clines"
+  # Use legacy favicon across the site
+  favicon = "/favicon.ico"
 
   # Homepage hero (Hugo Profile expects `params.hero`)
   [params.hero]
