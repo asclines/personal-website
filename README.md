@@ -1,5 +1,11 @@
 Personal website for Alexander Clines using [Academic Website Builder](https://sourcethemes.com/academic/)
 
+## Hidden subsites
+
+- Hidden subsites live in `subsites/` as git submodules that point at the static output of the external project (for example `subsites/charity-explorer`).
+- Hugo mounts each subsite into `static/<slug>` via `[[module.mounts]]` in `hugo.toml`, so `/charity-explorer/` is served without showing up in navigation.
+- Pull the latest subsite changes with `scripts/update-subsites.sh`, then commit the resulting submodule pointer update.
+
 
 ## Ecosystem
 

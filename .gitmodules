@@ -1,0 +1,4 @@
+[submodule "subsites/charity-explorer"]
+	path = subsites/charity-explorer
+	url = git@github.com:asclines/charity-explorer.git
+	branch = main
